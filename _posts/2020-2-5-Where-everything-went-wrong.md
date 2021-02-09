@@ -1,13 +1,17 @@
 ---
 layout: post
 title: Where everything went wrong...
+categories: [Rust, Error, Minidump]
 ---
 
 **Today you are frustrated.**
 
 This is so annoying. You've written a Rust crate and now that you want to test it for the very first time, _it doesn't work!_
 
-Come on, Rust! How dare you? You promised that once one gets past the compiler, it. _Just. **Works!**_ And now this!
+Come on, Rust! How dare you? You promised that once one gets past the compiler, it.  
+_Just.  
+**Works!**_  
+And now this!
 
 Ok, ok. You calm yourself down. Lets start from the beginning. You want to create so called [minidumps](https://docs.sentry.io/platforms/native/guides/minidumps/). This is a file that contains information about a crashed program (like stacks of all threads, CPU registers, system info, etc.).
 The minidump consists of various sections, such as the minidump header (including time of day, versions and basically a table of contents), a thread section (including all threads of the process and their stacks), memory mappings and libraries, etc. [Just to give some context, as all of this is actually not really important.]

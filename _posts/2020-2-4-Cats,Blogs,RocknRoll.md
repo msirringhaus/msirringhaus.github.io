@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cats, Blogs and Rock'n'Roll
+categories: [Blog, Jekyll]
 ---
 
 **Today you are a wannabe rock star blogger.**
@@ -25,7 +26,7 @@ Or do you?
 
 Github is nice enough to run Jekyll for you, so you would only need it locally for testing. But who does that, anyways?
 
-Therefore, you only need a nice template. Thankfully, there exists [Jekyll now](https://github.com/barryclark/jekyll-now).
+Therefore, you only need a nice template. Thankfully, there exists [reverie](https://github.com/amitmerchant1990/reverie).
 
 Why not take that, make minimal adjustments and be done with it?
 
