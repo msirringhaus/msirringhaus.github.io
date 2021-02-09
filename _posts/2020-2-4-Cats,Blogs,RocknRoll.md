@@ -33,3 +33,7 @@ Therefore, you only need a nice template. Thankfully, there exists [reverie](htt
 Why not take that, make minimal adjustments and be done with it?
 
 But just taking it without giving credit seems a bit lame, even for a (soon to be) rock star. Thus, you write a rather long-winded and convoluted thank-you note including...oh...cats or something. Seems appropriate.
+
+**Update:** What's a rock star without an audience? Nothing!  
+Thanks to [this](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) suggestion, you now have a comment section as well! \o/  
+(You only needed to make some minor adjustments for jekyll and reverie, seen [here](https://github.com/msirringhaus/msirringhaus.github.io/commit/f7fcdde0285ca0d1933d3d571be9e757c36ff063))
