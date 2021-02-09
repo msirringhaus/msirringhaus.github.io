@@ -2,6 +2,8 @@
 layout: post
 title: Where everything went wrong...
 categories: [Rust, Error, Minidump]
+mastodon:
+  id: 105700724543137442
 ---
 
 **Today you are frustrated.**

@@ -2,6 +2,8 @@
 layout: post
 title: Cats, Blogs and Rock'n'Roll
 categories: [Blog, Jekyll]
+mastodon:
+  id: 105700649468014608
 ---
 
 **Today you are a wannabe rock star blogger.**
