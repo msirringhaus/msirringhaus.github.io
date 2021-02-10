@@ -120,7 +120,7 @@ This function is used in multiple places in your code, e.g.:
    │
    ├─ sections::header::write()
    │
-   ├─ sections::thread_list_stream()
+   ├─ sections::thread_list_stream::write()
    │  └─ copy_from_process()
    │
    ├─ sections::mappings::write()
@@ -133,7 +133,7 @@ This function is used in multiple places in your code, e.g.:
    └─ ...
 ```
 
-Same goes for opening files that happens in multiple places (two examples of which are shown in `init()`), so getting `FileNotFound` without context is going to be equally fun, and so on.
+Same goes for opening files, which happens in multiple places (two examples of which are shown in `init()`), so getting `FileNotFound` without context is going to be equally fun, and so on.
 
 # Wrapping up (your errors)
 
@@ -161,7 +161,7 @@ pub enum PtraceDumperError {
 #[derive(Debug, Error)]
 pub enum SectionAppMemoryError {
     #[error("Failed to copy memory from process")]
-    CopyFromProcessError(#[from] DumperError),
+    CopyFromProcessError(#[from] PtraceDumperError),
     ...
 }
 
@@ -234,7 +234,7 @@ _Collects papers from the floor. Throws them into the air in jubilation_
 
 With that sweet, sweet error chain and the resulting error message, you now know where everything goes wrong. Not really _why_, though. You lack context. Luckily, you are not out of context (Note to yourself: You need a drum set for acoustically emphasizing your puns).
 
-Adding more context is rather easy. Instead of using `#[from]`, you use `#[source]`, which will not implement an automatic conversion function anymore, but keep the error chain intact:
+You have plenty of context to add, and adding it is rather easy. Instead of using `#[from]`, you use `#[source]`, which will not implement an automatic conversion function anymore, but keep the error chain intact:
 
 ```rust
 #[derive(Debug, Error)]
